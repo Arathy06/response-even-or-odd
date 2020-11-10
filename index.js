@@ -1,5 +1,5 @@
 
-var num=45;
+
 
 var express = require('express')
 
@@ -26,17 +26,18 @@ app.get("/",(req,res)=>{
 
 
 app.get("/check",(req,res)=>{
+    var num=45;
 
-    res.send("The result is:")
+    
 
     if(num%2==0)
 {
-    console.log("Even number")
+    res.send("Even number")
 }
 
 else
 {
-    console.log("Odd number")
+    res.send("Odd number")
 }
 })
 
